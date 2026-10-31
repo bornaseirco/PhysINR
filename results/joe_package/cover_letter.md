@@ -50,6 +50,6 @@ manuscript is not under consideration elsewhere. We suggest no reviewers.
 Sincerely,
 
 Ali Hosseini (corresponding author) and Saeed Sedighi
-Department of Computer Engineering, Shiraz Branch, Islamic Azad University,
-Shiraz, Iran
-ali.hosseini7148@iau.ac.ir
+Department of Computer Engineering, Shi.C. (Shiraz Branch), Islamic Azad
+University, Shiraz, Iran
+ali.hosseini7148@iau.ac.ir; saeed.sedighi@iau.ac.ir
