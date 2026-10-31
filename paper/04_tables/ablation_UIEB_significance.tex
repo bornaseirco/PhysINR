@@ -1,0 +1,284 @@
+\begin{table}[t]
+  \centering
+  \begin{tabular}{llcccc}
+    \toprule
+    Metric & Method & $\Delta$ & $p$-value & Sig. & $r$ \\
+    \midrule
+    PSNR$\uparrow$ & UDCP & -6.68 & 1.40e-07 & \checkmark & -0.92 \\
+    PSNR$\uparrow$ & Retinex & -2.80 & 0.147 & -- & -0.47 \\
+    PSNR$\uparrow$ & Water-Net & 4.08 & 1.42e-05 & \checkmark & 0.82 \\
+    PSNR$\uparrow$ & FUnIE-GAN & -1.77 & 0.320 & -- & -0.42 \\
+    PSNR$\uparrow$ & UIEC2-Net & 5.39 & 1.26e-07 & \checkmark & 0.92 \\
+    PSNR$\uparrow$ & Five-A+ & 4.78 & 4.17e-07 & \checkmark & 0.90 \\
+    PSNR$\uparrow$ & TOPAL & 2.02 & 0.120 & -- & 0.49 \\
+    PSNR$\uparrow$ & U-Shape-Transformer & 1.40 & 1.000 & -- & 0.30 \\
+    PSNR$\uparrow$ & WF-Diff & -0.93 & 1.000 & -- & -0.23 \\
+    PSNR$\uparrow$ & WaterMamba & 3.87 & 0.027 & \checkmark & 0.57 \\
+    PSNR$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.07 & 1.000 & -- & 0.26 \\
+    PSNR$\uparrow$ & PhysINR-Zero (delta\_max = 4) & -0.43 & 0.093 & -- & -0.50 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no colour balance) & -1.02 & 0.633 & -- & -0.37 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.04 & 1.000 & -- & 0.23 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.09 & 1.000 & -- & -0.20 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.10 & 1.000 & -- & -0.14 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & -0.04 & 1.000 & -- & 0.15 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.05 & 1.000 & -- & 0.00 \\
+    PSNR$\uparrow$ & PhysINR-Zero (no structure loss) & -0.14 & 1.000 & -- & -0.19 \\
+    PSNR$\uparrow$ & PhysINR-Zero (20 adaptation steps) & 0.18 & 1.000 & -- & 0.09 \\
+    PSNR$\uparrow$ & PhysINR-Zero (5 adaptation steps) & -0.91 & 0.010 & \checkmark & -0.61 \\
+    PSNR$\uparrow$ & PhysINR-Zero (coord stride 1) & 0.00 & 1.000 & -- & 0.15 \\
+    PSNR$\uparrow$ & PhysINR-Zero (coord stride 3) & -0.15 & 1.000 & -- & -0.09 \\
+    PSNR$\uparrow$ & PhysINR-Zero (tau\_max = 2) & -0.05 & 1.000 & -- & -0.03 \\
+    PSNR$\uparrow$ & PhysINR-Zero (tau\_max = 4) & -0.00 & 1.000 & -- & 0.17 \\
+    SSIM$\uparrow$ & UDCP & -0.30 & 1.72e-07 & \checkmark & -0.91 \\
+    SSIM$\uparrow$ & Retinex & -0.05 & 0.155 & -- & -0.46 \\
+    SSIM$\uparrow$ & Water-Net & 0.04 & 0.009 & \checkmark & 0.60 \\
+    SSIM$\uparrow$ & FUnIE-GAN & -0.20 & 1.95e-08 & \checkmark & -0.95 \\
+    SSIM$\uparrow$ & UIEC2-Net & 0.08 & 6.20e-08 & \checkmark & 0.93 \\
+    SSIM$\uparrow$ & Five-A+ & 0.09 & 3.18e-09 & \checkmark & 0.97 \\
+    SSIM$\uparrow$ & TOPAL & 0.05 & 0.005 & \checkmark & 0.63 \\
+    SSIM$\uparrow$ & U-Shape-Transformer & -0.16 & 3.09e-04 & \checkmark & -0.74 \\
+    SSIM$\uparrow$ & WF-Diff & -0.06 & 0.100 & -- & -0.49 \\
+    SSIM$\uparrow$ & WaterMamba & 0.07 & 5.01e-04 & \checkmark & 0.72 \\
+    SSIM$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.00 & 1.000 & -- & 0.07 \\
+    SSIM$\uparrow$ & PhysINR-Zero (delta\_max = 4) & -0.02 & 0.005 & \checkmark & -0.64 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no colour balance) & -0.04 & 1.000 & -- & -0.25 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no cycle consistency) & -0.00 & 1.000 & -- & 0.02 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.00 & 1.000 & -- & -0.27 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.00 & 1.000 & -- & -0.22 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & -0.00 & 1.000 & -- & 0.16 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.00 & 1.000 & -- & -0.08 \\
+    SSIM$\uparrow$ & PhysINR-Zero (no structure loss) & -0.00 & 0.943 & -- & -0.33 \\
+    SSIM$\uparrow$ & PhysINR-Zero (20 adaptation steps) & 0.01 & 1.000 & -- & 0.30 \\
+    SSIM$\uparrow$ & PhysINR-Zero (5 adaptation steps) & -0.02 & 2.19e-04 & \checkmark & -0.75 \\
+    SSIM$\uparrow$ & PhysINR-Zero (coord stride 1) & -0.00 & 1.000 & -- & 0.03 \\
+    SSIM$\uparrow$ & PhysINR-Zero (coord stride 3) & -0.00 & 1.000 & -- & -0.22 \\
+    SSIM$\uparrow$ & PhysINR-Zero (tau\_max = 2) & -0.00 & 1.000 & -- & 0.04 \\
+    SSIM$\uparrow$ & PhysINR-Zero (tau\_max = 4) & -0.00 & 1.000 & -- & 0.08 \\
+    MS-SSIM$\uparrow$ & UDCP & -0.31 & 4.11e-08 & \checkmark & -0.94 \\
+    MS-SSIM$\uparrow$ & Retinex & -0.03 & 0.132 & -- & -0.47 \\
+    MS-SSIM$\uparrow$ & Water-Net & 0.03 & 4.02e-06 & \checkmark & 0.85 \\
+    MS-SSIM$\uparrow$ & FUnIE-GAN & -0.03 & 0.105 & -- & -0.49 \\
+    MS-SSIM$\uparrow$ & UIEC2-Net & 0.05 & 1.16e-06 & \checkmark & 0.88 \\
+    MS-SSIM$\uparrow$ & Five-A+ & 0.04 & 7.59e-08 & \checkmark & 0.93 \\
+    MS-SSIM$\uparrow$ & TOPAL & 0.02 & 0.074 & -- & 0.52 \\
+    MS-SSIM$\uparrow$ & U-Shape-Transformer & 0.03 & 0.093 & -- & 0.50 \\
+    MS-SSIM$\uparrow$ & WF-Diff & -0.00 & 1.000 & -- & -0.11 \\
+    MS-SSIM$\uparrow$ & WaterMamba & 0.03 & 0.153 & -- & 0.46 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & -0.00 & 1.000 & -- & -0.19 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (delta\_max = 4) & -0.01 & 0.118 & -- & -0.48 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no colour balance) & -0.03 & 1.000 & -- & -0.29 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.00 & 1.000 & -- & 0.01 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.00 & 1.000 & -- & -0.22 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.00 & 1.000 & -- & -0.13 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & 0.00 & 0.653 & -- & 0.36 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.00 & 1.000 & -- & 0.22 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (no structure loss) & -0.00 & 1.000 & -- & -0.17 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (20 adaptation steps) & 0.00 & 1.000 & -- & 0.18 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (5 adaptation steps) & -0.02 & 0.001 & \checkmark & -0.69 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (coord stride 1) & -0.00 & 1.000 & -- & -0.06 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (coord stride 3) & -0.00 & 0.653 & -- & -0.36 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (tau\_max = 2) & -0.00 & 1.000 & -- & 0.05 \\
+    MS-SSIM$\uparrow$ & PhysINR-Zero (tau\_max = 4) & -0.00 & 1.000 & -- & 0.33 \\
+    LPIPS$\downarrow$ & UDCP & 0.14 & 1.11e-05 & \checkmark & 0.83 \\
+    LPIPS$\downarrow$ & Retinex & 0.05 & 0.149 & -- & 0.46 \\
+    LPIPS$\downarrow$ & Water-Net & -0.07 & 1.21e-04 & \checkmark & -0.76 \\
+    LPIPS$\downarrow$ & FUnIE-GAN & 0.33 & 3.18e-09 & \checkmark & 0.97 \\
+    LPIPS$\downarrow$ & UIEC2-Net & -0.10 & 2.24e-08 & \checkmark & -0.95 \\
+    LPIPS$\downarrow$ & Five-A+ & -0.09 & 7.38e-09 & \checkmark & -0.96 \\
+    LPIPS$\downarrow$ & TOPAL & -0.04 & 0.017 & \checkmark & -0.58 \\
+    LPIPS$\downarrow$ & U-Shape-Transformer & 0.19 & 4.02e-06 & \checkmark & 0.85 \\
+    LPIPS$\downarrow$ & WF-Diff & 0.12 & 8.31e-05 & \checkmark & 0.78 \\
+    LPIPS$\downarrow$ & WaterMamba & -0.07 & 1.87e-04 & \checkmark & -0.75 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (delta\_max = 0.5) & -0.01 & 0.794 & -- & -0.33 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (delta\_max = 4) & 0.03 & 0.002 & \checkmark & 0.68 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no colour balance) & 0.05 & 0.006 & \checkmark & 0.62 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no cycle consistency) & -0.00 & 1.000 & -- & -0.00 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no Jerlov prior) & 0.00 & 1.000 & -- & 0.14 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no physical-model loss) & 0.01 & 0.389 & -- & 0.39 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no anti-trivial constraints) & 0.00 & 1.000 & -- & -0.07 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no spatial smoothness) & 0.00 & 1.000 & -- & 0.25 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (no structure loss) & 0.00 & 0.794 & -- & 0.33 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (20 adaptation steps) & -0.00 & 1.000 & -- & -0.12 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (5 adaptation steps) & 0.02 & 0.794 & -- & 0.33 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (coord stride 1) & 0.00 & 1.000 & -- & 0.00 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (coord stride 3) & 0.00 & 1.000 & -- & 0.15 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (tau\_max = 2) & 0.00 & 1.000 & -- & 0.13 \\
+    LPIPS$\downarrow$ & PhysINR-Zero (tau\_max = 4) & 0.00 & 1.000 & -- & 0.03 \\
+    LPIPS$_{\rm vgg}\downarrow$ & UDCP & 0.10 & 0.001 & \checkmark & 0.69 \\
+    LPIPS$_{\rm vgg}\downarrow$ & Retinex & -0.00 & 1.000 & -- & -0.01 \\
+    LPIPS$_{\rm vgg}\downarrow$ & Water-Net & -0.07 & 8.37e-04 & \checkmark & -0.70 \\
+    LPIPS$_{\rm vgg}\downarrow$ & FUnIE-GAN & 0.25 & 3.84e-09 & \checkmark & 0.97 \\
+    LPIPS$_{\rm vgg}\downarrow$ & UIEC2-Net & -0.10 & 1.87e-08 & \checkmark & -0.95 \\
+    LPIPS$_{\rm vgg}\downarrow$ & Five-A+ & -0.11 & 4.55e-10 & \checkmark & -0.99 \\
+    LPIPS$_{\rm vgg}\downarrow$ & TOPAL & -0.06 & 0.004 & \checkmark & -0.64 \\
+    LPIPS$_{\rm vgg}\downarrow$ & U-Shape-Transformer & 0.14 & 2.25e-04 & \checkmark & 0.75 \\
+    LPIPS$_{\rm vgg}\downarrow$ & WF-Diff & 0.14 & 2.56e-06 & \checkmark & 0.86 \\
+    LPIPS$_{\rm vgg}\downarrow$ & WaterMamba & -0.09 & 1.65e-05 & \checkmark & -0.82 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (delta\_max = 0.5) & -0.01 & 0.524 & -- & -0.37 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (delta\_max = 4) & 0.02 & 0.003 & \checkmark & 0.65 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no colour balance) & 0.04 & 0.084 & -- & 0.50 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no cycle consistency) & -0.00 & 1.000 & -- & 0.05 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no Jerlov prior) & 0.00 & 1.000 & -- & 0.18 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no physical-model loss) & 0.01 & 0.417 & -- & 0.39 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no anti-trivial constraints) & 0.00 & 1.000 & -- & -0.02 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no spatial smoothness) & 0.00 & 1.000 & -- & 0.22 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (no structure loss) & 0.01 & 0.404 & -- & 0.40 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (20 adaptation steps) & -0.00 & 1.000 & -- & -0.15 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (5 adaptation steps) & 0.01 & 1.000 & -- & 0.19 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (coord stride 1) & -0.00 & 1.000 & -- & -0.15 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (coord stride 3) & 0.00 & 1.000 & -- & 0.14 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (tau\_max = 2) & 0.00 & 1.000 & -- & 0.01 \\
+    LPIPS$_{\rm vgg}\downarrow$ & PhysINR-Zero (tau\_max = 4) & 0.00 & 1.000 & -- & 0.06 \\
+    UCIQE$\uparrow$ & UDCP & -2.86 & 6.61e-04 & \checkmark & -0.70 \\
+    UCIQE$\uparrow$ & Retinex & -0.10 & 1.000 & -- & -0.05 \\
+    UCIQE$\uparrow$ & Water-Net & -4.92 & 8.37e-11 & \checkmark & -1.00 \\
+    UCIQE$\uparrow$ & FUnIE-GAN & -9.21 & 2.67e-10 & \checkmark & -0.99 \\
+    UCIQE$\uparrow$ & UIEC2-Net & -3.18 & 1.14e-09 & \checkmark & -0.98 \\
+    UCIQE$\uparrow$ & Five-A+ & -3.16 & 2.00e-10 & \checkmark & -0.99 \\
+    UCIQE$\uparrow$ & TOPAL & -5.62 & 1.41e-09 & \checkmark & -0.98 \\
+    UCIQE$\uparrow$ & U-Shape-Transformer & -5.84 & 4.55e-11 & \checkmark & -1.00 \\
+    UCIQE$\uparrow$ & WF-Diff & -6.54 & 4.55e-11 & \checkmark & -1.00 \\
+    UCIQE$\uparrow$ & WaterMamba & -3.50 & 5.09e-10 & \checkmark & -0.99 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.11 & 1.000 & -- & 0.17 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (delta\_max = 4) & 0.04 & 1.000 & -- & 0.11 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no colour balance) & 1.16 & 6.10e-04 & \checkmark & 0.71 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.00 & 1.000 & -- & 0.09 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.02 & 1.000 & -- & -0.00 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.01 & 1.000 & -- & -0.23 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & -0.01 & 1.000 & -- & -0.13 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.01 & 1.000 & -- & -0.14 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (no structure loss) & 0.00 & 1.000 & -- & 0.08 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (20 adaptation steps) & -0.32 & 0.019 & \checkmark & -0.57 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (5 adaptation steps) & 0.59 & 1.39e-04 & \checkmark & 0.76 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (coord stride 1) & 0.02 & 1.000 & -- & -0.21 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (coord stride 3) & 0.02 & 1.000 & -- & -0.06 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (tau\_max = 2) & -0.03 & 1.000 & -- & -0.08 \\
+    UCIQE$\uparrow$ & PhysINR-Zero (tau\_max = 4) & 0.00 & 1.000 & -- & 0.01 \\
+    UIQM$\uparrow$ & UDCP & 0.97 & 1.72e-07 & \checkmark & 0.91 \\
+    UIQM$\uparrow$ & Retinex & 0.07 & 1.000 & -- & 0.29 \\
+    UIQM$\uparrow$ & Water-Net & -0.26 & 4.47e-08 & \checkmark & -0.94 \\
+    UIQM$\uparrow$ & FUnIE-GAN & -0.51 & 8.29e-10 & \checkmark & -0.98 \\
+    UIQM$\uparrow$ & UIEC2-Net & -0.18 & 7.62e-05 & \checkmark & -0.78 \\
+    UIQM$\uparrow$ & Five-A+ & -0.17 & 4.69e-05 & \checkmark & -0.79 \\
+    UIQM$\uparrow$ & TOPAL & -0.15 & 0.004 & \checkmark & -0.65 \\
+    UIQM$\uparrow$ & U-Shape-Transformer & -0.40 & 4.55e-11 & \checkmark & -1.00 \\
+    UIQM$\uparrow$ & WF-Diff & -0.11 & 0.874 & -- & -0.35 \\
+    UIQM$\uparrow$ & WaterMamba & -0.02 & 1.000 & -- & -0.15 \\
+    UIQM$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.02 & 0.466 & -- & 0.40 \\
+    UIQM$\uparrow$ & PhysINR-Zero (delta\_max = 4) & 0.00 & 1.000 & -- & 0.04 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no colour balance) & 0.08 & 1.000 & -- & 0.24 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.00 & 1.000 & -- & -0.10 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.00 & 1.000 & -- & -0.12 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.01 & 0.877 & -- & -0.35 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & 0.00 & 1.000 & -- & -0.04 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.00 & 1.000 & -- & -0.28 \\
+    UIQM$\uparrow$ & PhysINR-Zero (no structure loss) & 0.00 & 1.000 & -- & 0.20 \\
+    UIQM$\uparrow$ & PhysINR-Zero (20 adaptation steps) & -0.01 & 1.000 & -- & -0.01 \\
+    UIQM$\uparrow$ & PhysINR-Zero (5 adaptation steps) & 0.02 & 1.000 & -- & 0.20 \\
+    UIQM$\uparrow$ & PhysINR-Zero (coord stride 1) & -0.00 & 1.000 & -- & -0.12 \\
+    UIQM$\uparrow$ & PhysINR-Zero (coord stride 3) & -0.00 & 1.000 & -- & 0.08 \\
+    UIQM$\uparrow$ & PhysINR-Zero (tau\_max = 2) & 0.00 & 1.000 & -- & 0.03 \\
+    UIQM$\uparrow$ & PhysINR-Zero (tau\_max = 4) & 0.00 & 1.000 & -- & -0.19 \\
+    ICM$\uparrow$ & UDCP & 0.25 & 2.50e-09 & \checkmark & 0.97 \\
+    ICM$\uparrow$ & Retinex & -0.03 & 1.000 & -- & -0.22 \\
+    ICM$\uparrow$ & Water-Net & -0.09 & 3.06e-09 & \checkmark & -0.97 \\
+    ICM$\uparrow$ & FUnIE-GAN & -0.06 & 0.005 & \checkmark & -0.63 \\
+    ICM$\uparrow$ & UIEC2-Net & -0.09 & 5.92e-07 & \checkmark & -0.89 \\
+    ICM$\uparrow$ & Five-A+ & -0.07 & 2.76e-07 & \checkmark & -0.91 \\
+    ICM$\uparrow$ & TOPAL & -0.09 & 3.07e-06 & \checkmark & -0.86 \\
+    ICM$\uparrow$ & U-Shape-Transformer & -0.05 & 5.82e-04 & \checkmark & -0.71 \\
+    ICM$\uparrow$ & WF-Diff & -0.06 & 0.185 & -- & -0.45 \\
+    ICM$\uparrow$ & WaterMamba & -0.05 & 0.009 & \checkmark & -0.61 \\
+    ICM$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.01 & 1.000 & -- & 0.13 \\
+    ICM$\uparrow$ & PhysINR-Zero (delta\_max = 4) & 0.00 & 1.000 & -- & 0.12 \\
+    ICM$\uparrow$ & PhysINR-Zero (no colour balance) & 0.10 & 4.89e-05 & \checkmark & 0.79 \\
+    ICM$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.00 & 1.000 & -- & -0.06 \\
+    ICM$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.00 & 0.606 & -- & -0.36 \\
+    ICM$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.00 & 1.000 & -- & -0.05 \\
+    ICM$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & -0.00 & 1.000 & -- & -0.08 \\
+    ICM$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.00 & 1.000 & -- & -0.09 \\
+    ICM$\uparrow$ & PhysINR-Zero (no structure loss) & -0.00 & 0.289 & -- & -0.42 \\
+    ICM$\uparrow$ & PhysINR-Zero (20 adaptation steps) & -0.01 & 1.000 & -- & -0.31 \\
+    ICM$\uparrow$ & PhysINR-Zero (5 adaptation steps) & 0.03 & 0.449 & -- & 0.39 \\
+    ICM$\uparrow$ & PhysINR-Zero (coord stride 1) & 0.00 & 1.000 & -- & 0.14 \\
+    ICM$\uparrow$ & PhysINR-Zero (coord stride 3) & -0.00 & 1.000 & -- & -0.13 \\
+    ICM$\uparrow$ & PhysINR-Zero (tau\_max = 2) & -0.00 & 1.000 & -- & 0.22 \\
+    ICM$\uparrow$ & PhysINR-Zero (tau\_max = 4) & -0.00 & 1.000 & -- & -0.43 \\
+    SM$\uparrow$ & UDCP & -0.04 & 1.05e-04 & \checkmark & -0.77 \\
+    SM$\uparrow$ & Retinex & 0.09 & 5.86e-10 & \checkmark & 0.99 \\
+    SM$\uparrow$ & Water-Net & -0.06 & 2.09e-07 & \checkmark & -0.91 \\
+    SM$\uparrow$ & FUnIE-GAN & -0.13 & 4.55e-11 & \checkmark & -1.00 \\
+    SM$\uparrow$ & UIEC2-Net & -0.04 & 1.90e-07 & \checkmark & -0.91 \\
+    SM$\uparrow$ & Five-A+ & -0.03 & 9.50e-08 & \checkmark & -0.92 \\
+    SM$\uparrow$ & TOPAL & -0.05 & 1.09e-06 & \checkmark & -0.88 \\
+    SM$\uparrow$ & U-Shape-Transformer & -0.12 & 4.55e-11 & \checkmark & -1.00 \\
+    SM$\uparrow$ & WF-Diff & -0.00 & 1.000 & -- & 0.04 \\
+    SM$\uparrow$ & WaterMamba & 0.01 & 1.000 & -- & 0.16 \\
+    SM$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.00 & 1.000 & -- & 0.20 \\
+    SM$\uparrow$ & PhysINR-Zero (delta\_max = 4) & -0.00 & 1.000 & -- & -0.00 \\
+    SM$\uparrow$ & PhysINR-Zero (no colour balance) & 0.01 & 1.000 & -- & 0.26 \\
+    SM$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.00 & 1.000 & -- & -0.17 \\
+    SM$\uparrow$ & PhysINR-Zero (no Jerlov prior) & -0.00 & 1.000 & -- & 0.13 \\
+    SM$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.00 & 1.000 & -- & -0.22 \\
+    SM$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & 0.00 & 1.000 & -- & 0.01 \\
+    SM$\uparrow$ & PhysINR-Zero (no spatial smoothness) & 0.00 & 1.000 & -- & 0.20 \\
+    SM$\uparrow$ & PhysINR-Zero (no structure loss) & 0.00 & 1.000 & -- & 0.10 \\
+    SM$\uparrow$ & PhysINR-Zero (20 adaptation steps) & -0.01 & 0.513 & -- & -0.39 \\
+    SM$\uparrow$ & PhysINR-Zero (5 adaptation steps) & 0.01 & 0.005 & \checkmark & 0.63 \\
+    SM$\uparrow$ & PhysINR-Zero (coord stride 1) & 0.00 & 1.000 & -- & 0.10 \\
+    SM$\uparrow$ & PhysINR-Zero (coord stride 3) & 0.00 & 1.000 & -- & 0.08 \\
+    SM$\uparrow$ & PhysINR-Zero (tau\_max = 2) & 0.00 & 1.000 & -- & 0.24 \\
+    SM$\uparrow$ & PhysINR-Zero (tau\_max = 4) & 0.00 & 1.000 & -- & 0.06 \\
+    ConM$\uparrow$ & UDCP & 0.27 & 9.50e-08 & \checkmark & 0.92 \\
+    ConM$\uparrow$ & Retinex & 0.01 & 1.000 & -- & 0.21 \\
+    ConM$\uparrow$ & Water-Net & -0.07 & 3.78e-08 & \checkmark & -0.94 \\
+    ConM$\uparrow$ & FUnIE-GAN & -0.13 & 5.98e-09 & \checkmark & -0.96 \\
+    ConM$\uparrow$ & UIEC2-Net & -0.05 & 1.63e-04 & \checkmark & -0.76 \\
+    ConM$\uparrow$ & Five-A+ & -0.04 & 6.14e-05 & \checkmark & -0.79 \\
+    ConM$\uparrow$ & TOPAL & -0.04 & 0.009 & \checkmark & -0.61 \\
+    ConM$\uparrow$ & U-Shape-Transformer & -0.10 & 4.55e-11 & \checkmark & -1.00 \\
+    ConM$\uparrow$ & WF-Diff & -0.03 & 0.538 & -- & -0.39 \\
+    ConM$\uparrow$ & WaterMamba & -0.01 & 1.000 & -- & -0.15 \\
+    ConM$\uparrow$ & PhysINR-Zero (delta\_max = 0.5) & 0.00 & 0.538 & -- & 0.39 \\
+    ConM$\uparrow$ & PhysINR-Zero (delta\_max = 4) & 0.00 & 1.000 & -- & 0.05 \\
+    ConM$\uparrow$ & PhysINR-Zero (no colour balance) & 0.02 & 1.000 & -- & 0.23 \\
+    ConM$\uparrow$ & PhysINR-Zero (no cycle consistency) & 0.00 & 1.000 & -- & -0.16 \\
+    ConM$\uparrow$ & PhysINR-Zero (no Jerlov prior) & 0.00 & 1.000 & -- & -0.15 \\
+    ConM$\uparrow$ & PhysINR-Zero (no physical-model loss) & -0.00 & 0.849 & -- & -0.35 \\
+    ConM$\uparrow$ & PhysINR-Zero (no anti-trivial constraints) & 0.00 & 1.000 & -- & -0.06 \\
+    ConM$\uparrow$ & PhysINR-Zero (no spatial smoothness) & -0.00 & 1.000 & -- & -0.27 \\
+    ConM$\uparrow$ & PhysINR-Zero (no structure loss) & 0.00 & 1.000 & -- & 0.20 \\
+    ConM$\uparrow$ & PhysINR-Zero (20 adaptation steps) & -0.00 & 1.000 & -- & 0.01 \\
+    ConM$\uparrow$ & PhysINR-Zero (5 adaptation steps) & 0.01 & 1.000 & -- & 0.18 \\
+    ConM$\uparrow$ & PhysINR-Zero (coord stride 1) & -0.00 & 1.000 & -- & -0.13 \\
+    ConM$\uparrow$ & PhysINR-Zero (coord stride 3) & -0.00 & 1.000 & -- & 0.06 \\
+    ConM$\uparrow$ & PhysINR-Zero (tau\_max = 2) & 0.00 & 1.000 & -- & -0.13 \\
+    ConM$\uparrow$ & PhysINR-Zero (tau\_max = 4) & 0.00 & 1.000 & -- & -0.21 \\
+    CCF$\downarrow$ & UDCP & 0.09 & 6.37e-10 & \checkmark & 0.99 \\
+    CCF$\downarrow$ & Retinex & -0.07 & 0.002 & \checkmark & -0.68 \\
+    CCF$\downarrow$ & Water-Net & 0.01 & 1.000 & -- & -0.01 \\
+    CCF$\downarrow$ & FUnIE-GAN & 0.05 & 0.436 & -- & 0.42 \\
+    CCF$\downarrow$ & UIEC2-Net & -0.00 & 1.000 & -- & -0.20 \\
+    CCF$\downarrow$ & Five-A+ & 0.01 & 1.000 & -- & 0.09 \\
+    CCF$\downarrow$ & TOPAL & 0.01 & 1.000 & -- & 0.19 \\
+    CCF$\downarrow$ & U-Shape-Transformer & -0.00 & 1.000 & -- & -0.07 \\
+    CCF$\downarrow$ & WF-Diff & -0.08 & 0.174 & -- & -0.48 \\
+    CCF$\downarrow$ & WaterMamba & 0.00 & 1.000 & -- & -0.07 \\
+    CCF$\downarrow$ & PhysINR-Zero (delta\_max = 0.5) & -0.00 & 1.000 & -- & 0.09 \\
+    CCF$\downarrow$ & PhysINR-Zero (delta\_max = 4) & -0.01 & 1.000 & -- & -0.21 \\
+    CCF$\downarrow$ & PhysINR-Zero (no colour balance) & 0.04 & 5.45e-04 & \checkmark & 0.72 \\
+    CCF$\downarrow$ & PhysINR-Zero (no cycle consistency) & -0.00 & 1.000 & -- & 0.11 \\
+    CCF$\downarrow$ & PhysINR-Zero (no Jerlov prior) & -0.00 & 1.000 & -- & -0.20 \\
+    CCF$\downarrow$ & PhysINR-Zero (no physical-model loss) & -0.00 & 1.000 & -- & -0.11 \\
+    CCF$\downarrow$ & PhysINR-Zero (no anti-trivial constraints) & -0.00 & 1.000 & -- & -0.09 \\
+    CCF$\downarrow$ & PhysINR-Zero (no spatial smoothness) & -0.00 & 1.000 & -- & -0.23 \\
+    CCF$\downarrow$ & PhysINR-Zero (no structure loss) & -0.00 & 1.000 & -- & 0.08 \\
+    CCF$\downarrow$ & PhysINR-Zero (20 adaptation steps) & -0.00 & 1.000 & -- & -0.05 \\
+    CCF$\downarrow$ & PhysINR-Zero (5 adaptation steps) & -0.00 & 1.000 & -- & -0.08 \\
+    CCF$\downarrow$ & PhysINR-Zero (coord stride 1) & -0.00 & 1.000 & -- & 0.05 \\
+    CCF$\downarrow$ & PhysINR-Zero (coord stride 3) & -0.00 & 1.000 & -- & 0.02 \\
+    CCF$\downarrow$ & PhysINR-Zero (tau\_max = 2) & -0.01 & 1.000 & -- & -0.17 \\
+    CCF$\downarrow$ & PhysINR-Zero (tau\_max = 4) & -0.00 & 1.000 & -- & -0.32 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

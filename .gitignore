@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Benchmark run outputs (regenerable; curated finals live in results/)
+hydro_bench_results/
+partial.json
+
+# Datasets and third-party code — fetched separately, never committed
+datasets/
+third_party/
+downloads/
+
+# macOS
+.DS_Store
